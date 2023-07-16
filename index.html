@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:
-        wght@500;600;700&family=Roboto:wght@300;400;500;700&family=VT323&display=swap"
+        wght@500;600;700&family=Roboto:wght@300;400;500;600;700&family=VT323&display=swap"
         rel="stylesheet">
 
 
@@ -41,6 +41,77 @@
                 <h2 class="name-text">SERENE ARYAL</h2>
             </div>
 
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="column-1">
+                    <img src="images/aboutphoto.jpg" alt="">
+                </div>
+
+                <div class="column-2">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Recusandae, nostrum nisi maxime similique itaque impedit
+                         quam enim doloribus, laboriosam aut, deserunt porro ape
+                         riam. Libero officia perspiciatis officiis modi necessi
+                         tatibus cumque. 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Recusandae, nostrum nisi maxime similique itaque impedit
+                         quam enim doloribus, laboriosam aut, deserunt porro ape
+                         riam. Libero officia perspiciatis officiis modi necessi
+                         tatibus cumque. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="openTab('skills-tab')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education-tab')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience-tab')">Experience</p>
+                    </div>
+
+                    <div id="skills-tab" class="tab-content active">
+                        <ul>
+                            <li><span class="web-development">Web Development:</span>
+                                <div class="images">
+                                    <img src="images/html.png" alt="html">
+                                    <img src="images/css.png" alt="css">
+                                    <img src="images/js.png" alt="js">
+                                    <img src="images/react.png" alt="react">
+                                </div>
+                            </li>
+
+                            <li><span class="graphics-design">Graphics Design:</span>
+                                <div class="images">
+                                    <img src="images/ps.png" alt="ps">
+                                    <img src="images/ai.png" alt="ai">
+                                    <img src="images/id.png" alt="id">
+                                </div>
+                            </li>
+
+                            <li><span class="version-control">Version Control:</span>
+                                <div class="images">
+                                    <img src="images/git.png" alt="git">
+                                    <img src="images/github.png" alt="github">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div id="education-tab" class="tab-content">
+                        <img src="images/education.jpg" alt="" class="education">
+                    </div>
+
+                    <div id="experience-tab" class="tab-content">
+                        <span>Athough I have several semi-professional experiences, I have not yet had professional working experience.
+                            I am currently learning and working on my projects and I am open to multitudes of possibilities.
+                        </span>
+                            
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
