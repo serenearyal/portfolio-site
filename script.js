@@ -2,7 +2,6 @@ const tabLinks = document.getElementsByClassName("tab-links")
 const tabContents = document.getElementsByClassName("tab-content")
 
 function openTab(tab){
-    console.log("skdhs")
     for(tabLink of tabLinks){
         tabLink.classList.remove("active");
     }
