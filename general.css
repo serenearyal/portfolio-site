@@ -27,6 +27,13 @@
     list-style: none;
 }
 
+.btn{
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: var(--color-white);
+}
+
 /* font-family: 'Cormorant Garamond',serif;
 font-family: 'Roboto',sans-serif;
 font-family: 'VT323',monospace; */

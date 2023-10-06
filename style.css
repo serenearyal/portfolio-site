@@ -294,3 +294,54 @@ body{
     color: white;
 }
 
+/*---------------------------------CONTACTS-------------------------*/
+.contact{
+    color: var(--color-dark);
+}
+
+.contact h1 {
+    font-size: 3rem;
+}
+
+
+.contact .container{
+    margin: 50px 100px;
+}
+.contact .row{
+    display: flex;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.contact-left p i{
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.social-icons{
+    margin-top: 15px;
+}
+
+.social-icons a{
+    display: inline-block;
+    color: rgb(128, 106, 186);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+    transition: transform 0.5s ease;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
