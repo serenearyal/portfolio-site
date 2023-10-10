@@ -7,6 +7,22 @@ html{
     scroll-behavior: smooth;
 }
 
+p, span, nav{
+    font-family: 'Cormorant', serif;
+    font-weight:500;
+    /*font-family: 'Raleway Dots', sans-serif;*/
+}
+
+h1{
+    font-family: 'Raleway Dots', sans-serif;
+    text-shadow: 2px 2px 10px grey;
+    transition: all 300ms ease;
+}
+
+h1:hover{
+    text-shadow: 0 0 5px rgb(47, 47, 226)
+}
+
 .header{
     height: 100vh;
     width: 100%;
@@ -59,6 +75,11 @@ html{
 .header-text{
     margin: 100px 0 0 100px;
     display: inline-block;
+    transition: all 300ms ease;
+}
+
+.header-text:hover{
+    text-shadow: 0 0 5px rgb(47, 47, 226);
 }
 
 .header-text .hello-world-text{
@@ -97,6 +118,15 @@ html{
     font-weight: 500;
     font-size: 4rem;
     color: #443636;
+    transition: box-shadow 200ms ease;
+    transition: transform 400ms ease;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.intro-text .name-text:hover{
+    box-shadow: 0 0 5px #443030;
+    transform: translateX(10px);
 }
 
 .intro-text{
@@ -104,6 +134,18 @@ html{
     font-weight: 100;
     font-size: 0.8rem;
     color: #443636;
+}
+
+.intro-text h3{
+        border-radius: 5px;
+        padding: 2px;
+        transition: box-shadow 200ms ease;
+        transition: transform 400ms ease;
+}
+
+.intro-text h3:hover{
+        box-shadow: 0 0 5px #443030;
+        transform: translateX(10px);
 }
 
 /*--------------------ABOUT ME--------------------*/
@@ -126,6 +168,13 @@ html{
     width: 90%;
     border-radius: 20px;
     margin-left: 50px;
+    box-shadow: 0 0 5px black;
+    transition: all 300ms ease;
+}
+
+.about .row .column-1 img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px black;
 }
 
 .about .row .column-2{
@@ -202,6 +251,13 @@ html{
 
 .tab-content img{
     width: 50px;
+    transition: all 400ms ease;
+}
+
+.tab-content img:hover{
+    transform: translateY(-5px);
+    -webkit-filter: drop-shadow(2px 1px 3px #666666);
+    filter: drop-shadow(2px 1px 3px #666666);
 }
 
 .tab-content span{
@@ -352,7 +408,7 @@ html{
     color: rgb(128, 106, 186);
     text-decoration: none;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 30px;
     transition: transform 0.5s ease;
 }
 
@@ -446,7 +502,7 @@ html{
     }
 
     .header .container nav ul li{
-        margin: 35px;
+        margin: 40px;
     }
 
     .header .container nav ul li a {
@@ -596,8 +652,8 @@ form textarea {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 
- 
 }
