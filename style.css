@@ -417,16 +417,17 @@ html{
         display: block;
         font-size: 25px;
     }
+    
+    .header-text{
+        margin: 100px 0 0 0;
+        padding-left: 50px;
+    }
 
     .intro-text{
         padding-left: 50px;
         margin: 10px 0 0 0;
     }
 
-    .header-text{
-        margin: 100px 0 0 0;
-        padding-left: 50px;
-    }
 
     .header .container nav {
         position: absolute;
