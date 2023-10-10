@@ -19,23 +19,25 @@
 
 
     <script src="https://kit.fontawesome.com/b1290d9751.js" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css">
     <title>Serene Aryal</title>
 </head>
 <body>
-    <div class="header">
-
+    <div id= "header" class="header">
+        
         <div class="container">
-            <nav>
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="menuLink" href="#header">Home</a></li>
+                    <li><a class="menuLink" href="#about">About</a></li>
+                    <li><a class="menuLink" href="#projects">Projects</a></li>
+                    <li><a class="menuLink" href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="closeMenu" onclick="closemenu()"></i>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars" id= "menuIcon" onclick="openmenu()"></i>
 
             <div class="header-text">
                 <h2 class="hello-world-text">Hello World!</h2>
@@ -43,7 +45,7 @@
             </div>
             
             <div class="intro-text">
-                <h3>Web Devoloper &#183; Graphics Designer</h3>
+                <h3>Web Developer &#183; Graphics Designer</h3>
                 <h2 class="name-text">SERENE ARYAL</h2>
             </div>
 
@@ -52,7 +54,7 @@
 
 <!--------------------About me---------------------------->
 
-    <div class="about">
+    <div id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="column-1">
@@ -61,16 +63,11 @@
 
                 <div class="column-2">
                     <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Recusandae, nostrum nisi maxime similique itaque impedit
-                         quam enim doloribus, laboriosam aut, deserunt porro ape
-                         riam. Libero officia perspiciatis officiis modi necessi
-                         tatibus cumque. 
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Recusandae, nostrum nisi maxime similique itaque impedit
-                         quam enim doloribus, laboriosam aut, deserunt porro ape
-                         riam. Libero officia perspiciatis officiis modi necessi
-                         tatibus cumque. 
+                    <p>Hey there! I'm Serene from Nepal, currently a Computer Engineering Freshman at USM.
+                        I'm just at the beginning of my coding journey but I'm very excited about the projects that
+                        I'm going to work on in the near future. When I'm free, I like to do cycling, go hiking or trekking.
+                        I like playing and watching sports, and my interests range from MMA to watching chess world cups. 
+                        Besides these, I do cubing. So if you're interested in Rubik's cubes, hmu :) 
                     </p>
 
                     <div class="tab-titles">
@@ -83,7 +80,7 @@
 
                     <div id="skills-tab" class="tab-content active">
                         <ul>
-                            <li><span class="web-development">Web Development:</span>
+                            <li><span class="web-development">Web dev:</span>
                                 <div class="images">
                                     <img src="images/logos/html.png" alt="html">
                                     <img src="images/logos/css.png" alt="css">
@@ -129,7 +126,7 @@
 
     <!-------------PROJECTS------------------->
 
-    <div class="projects">
+    <div id="projects" class="projects">
         <div class="container">
             <h1>Projects</h1>
 
@@ -138,8 +135,8 @@
                     <img src="images/projects/admin-project.jpg" alt="">
                     <div class="details-layer">
                         <h3>Admin Dashboard</h3>
-                        <p>loskdjjjjjjjjjjkajdskja skadj akdjskadj skdj skjd akjds ksaj dksadj skadj
-                            skdksdjksdksjdk skdhk skdh skjd sd skdj akhsd fsfdjk jk
+                        <p>A fully responsive webpage of a Admin Dashboard made using pure html, css and javascript.
+                            You can toggle between light and dark mode.
                         </p>
                         <a href="https://serenearyal.github.io/Admin-Dashboard/" target="_blank"><span class="material-symbols-rounded">open_in_new</span></a>
                     </div>
@@ -149,8 +146,8 @@
                     <img src="images/projects/ig-project.jpeg" alt="">
                     <div class="details-layer">
                         <h3>Instagram Bot</h3>
-                        <p>loskdjjjjjjjjjjkajdskja skadj akdjskadj skdj skjd akjds ksaj dksadj skadj
-                            skdksdjksdksjdk skdhk skdh skjd sd skdj akhsd fsfdjk jk
+                        <p>An instagram bot which gives you a list of people who don't follow you back lol.
+                            Made with python and selenium.
                         </p>
                         <a href="https://github.com/serenearyal/Instagram-bot" target="_blank"><span class="material-symbols-rounded">open_in_new</span></a>
                     </div>
@@ -160,7 +157,7 @@
     </div>
 
     <!--------------------CONTACT ME-------------------->
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="container">
             <div class="row">
         
@@ -177,12 +174,14 @@
                 </div>
 
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" id="" rows="6" placeholder="Your message" required></textarea>
                         <button class= "btn" type="submit">Submit</button>
                     </form>
+
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
