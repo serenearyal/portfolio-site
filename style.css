@@ -314,7 +314,9 @@ h1:hover {
 
 .works .work img {
   width: 100%;
+  height: 100%;
   transition: 0.5s all ease;
+  object-fit: cover;
 }
 
 .details-layer {
@@ -420,6 +422,11 @@ h1:hover {
 .contact-left p i {
   font-size: 17px;
   margin-right: 5px;
+  cursor: pointer;
+}
+
+.contact-left span {
+  cursor: pointer;
 }
 
 .social-icons {
@@ -637,6 +644,12 @@ form textarea {
   }
 
   /*<----------------------------------CONTACT ME ------------------------------>*/
+
+  .email1 {
+    z-index: 1000000;
+    cursor: pointer !important;
+  }
+
   .contact h1 {
     font-size: 2.4rem;
   }
