@@ -8,12 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Roboto:wght@300;400;500;700&family=VT323&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Raleway+Dots&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -27,244 +22,628 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#7380ec',
-              danger: '#ff7782',
-              success: '#41f1b6',
-              warning: '#ffbb55',
-              white: '#ffffff',
-              infoDark: '#7d8da1',
-              infoLight: '#dce1eb',
-              dark: '#363949',
-              light: 'rgba(132, 139, 200, 0.18)',
-              primaryVariant: '#111e88',
-              darkVariant: '#677483',
-              background: '#f6f6f9',
-            },
-            fontFamily: {
-              'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
-              'roboto': ['Roboto', 'sans-serif'],
-              'vt323': ['VT323', 'monospace'],
-              'cormorant': ['Cormorant', 'serif'],
-              'raleway-dots': ['"Raleway Dots"', 'sans-serif'],
-            },
-            boxShadow: {
-              custom: '0 0 10px rgba(189, 187, 187, 0.3)',
-              customDark: '0 0 30px rgba(189, 187, 187, 0.3)',
-            },
-          },
-        },
-      }
-    </script>
-
-    <title>Serene Aryal</title>
+    <title>Serene Aryal - Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-background font-roboto">
-    <div id="header" class="header h-screen w-full bg-cover bg-[url('images/poster-empty.jpg')]">
-      <div class="container p-2.5 relative">
-        <nav id="navbar" class="absolute top-5 right-25">
-          <ul class="flex items-center gap-12">
-            <li><a class="menuLink text-dark text-xl relative hover:after:w-[110%] after:content-[''] after:w-0 after:h-0.75 after:rounded-sm after:bg-primary after:absolute after:bottom-[-5px] after:left-0 after:transition-all after:duration-200" href="#header">Home</a></li>
-            <li><a class="menuLink text-dark text-xl relative hover:after:w-[110%] after:content-[''] after:w-0 after:h-0.75 after:rounded-sm after:bg-primary after:absolute after:bottom-[-5px] after:left-0 after:transition-all after:duration-200" href="#about">About</a></li>
-            <li><a class="menuLink text-dark text-xl relative hover:after:w-[110%] after:content-[''] after:w-0 after:h-0.75 after:rounded-sm after:bg-primary after:absolute after:bottom-[-5px] after:left-0 after:transition-all after:duration-200" href="#projects">Projects</a></li>
-            <li><a class="menuLink text-dark text-xl relative hover:after:w-[110%] after:content-[''] after:w-0 after:h-0.75 after:rounded-sm after:bg-primary after:absolute after:bottom-[-5px] after:left-0 after:transition-all after:duration-200" href="#contact">Contact</a></li>
-            <i
-              class="fa-solid fa-xmark hidden"
-              id="closeMenu"
-              onclick="closemenu()"
-            ></i>
-          </ul>
-        </nav>
-        <i class="fa-solid fa-bars hidden" id="menuIcon" onclick="openmenu()"></i>
-
-        <div class="header-text mt-25 ml-25 inline-block transition-all duration-300 hover:text-shadow-blue">
-          <h2 class="hello-world-text font-vt323 text-2xl tracking-widest border-r-2 border-black w-full whitespace-nowrap overflow-hidden animate-typing">Hello World!</h2>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">SA</a>
         </div>
-
-        <div class="intro-text ml-25 flex flex-col items-start justify-center gap-1.25">
-          <h3 class="font-cormorant-garamond font-thin text-sm text-[#443636] rounded-md p-0.5 transition-all duration-200 hover:shadow-md hover:translate-x-2.5">Web Developer &#183; Graphics Designer</h3>
-          <h2 class="name-text font-cormorant-garamond font-medium text-4xl text-[#443636] transition-all duration-400 rounded-2xl p-1.25 hover:shadow-md hover:translate-x-2.5">SERENE ARYAL</h2>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Overview</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- About me -->
-    <div id="about" class="about m-12.5 text-dark">
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-main">
+            <div class="hero-info">
+              <h1>Serene Aryal</h1>
+              <h2>Software Engineer & Computer Engineering Student</h2>
+              <p class="hero-description">
+                Full-stack developer specializing in cloud infrastructure,
+                mobile applications, and scalable systems. Currently pursuing
+                Computer Engineering at USM with hands-on experience in
+                production environments.
+              </p>
+
+              <div class="hero-contact">
+                <a
+                  href="mailto:serene.aryal24@gmail.com"
+                  class="contact-btn primary"
+                >
+                  <i class="fas fa-envelope"></i>
+                  serene.aryal24@gmail.com
+                </a>
+                <a
+                  href="https://linkedin.com/in/serenearyal"
+                  target="_blank"
+                  class="contact-btn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-tech">
+              <h3>Current Tech Stack</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <img src="images/logos/react.png" alt="React" />
+                  <span>React</span>
+                </div>
+                <div class="tech-item">
+                  <img src="images/logos/python.svg.png" alt="Python" />
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <img src="images/logos/nodejs.png" alt="Node.js" />
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <img src="images/logos/mysql.png" alt="SQL" />
+                  <span>SQL</span>
+                </div>
+                <div class="tech-item cloud">
+                  <i class="fab fa-aws"></i>
+                  <span>AWS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-swift"></i>
+                  <span>SwifUI</span>
+                </div>
+              </div>
+
+              <div class="certifications">
+                <a
+                  href="https://www.credly.com/badges/d91a4e3a-4f24-4224-8537-5dc9b3d37f79/public_url"
+                  target="_blank"
+                  class="cert-badge"
+                >
+                  <i class="fab fa-aws"></i>
+                  <span>AWS Solutions Architect Associate</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2>Professional Experience</h2>
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-header">
+                <div class="experience-info">
+                  <h3>Software Developer Intern</h3>
+                  <p class="company">BeCloud - AWS Partner</p>
+                  <span class="date">May 2024 - Present</span>
+                </div>
+                <div class="experience-metrics">
+                  <div class="metric">
+                    <span class="metric-value">70%</span>
+                    <span class="metric-label">Setup Time Reduction</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">90%</span>
+                    <span class="metric-label">Cost Reduction</span>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-content">
+                <ul class="experience-details">
+                  <li>
+                    <strong>Infrastructure as Code:</strong> Created
+                    reproducible and scalable cloud infrastructure using
+                    Terraform, reducing deployment setup time by 70% across
+                    multiple environments
+                  </li>
+                  <li>
+                    <strong>CI/CD Implementation:</strong> Built automated
+                    testing, building, and deployment pipelines ensuring
+                    zero-downtime deployments
+                  </li>
+                  <li>
+                    <strong>Serverless Architecture:</strong> Developed
+                    cost-effective solutions with AWS Lambda, API Gateway, and
+                    DynamoDB, achieving up to 90% cost reduction
+                  </li>
+                  <li>
+                    <strong>Full-Stack Development:</strong> Built production
+                    applications using React and Flask, containerized with
+                    Docker for consistent deployment
+                  </li>
+                </ul>
+                <div class="tech-used">
+                  <span>Terraform</span>
+                  <span>AWS Lambda</span>
+                  <span>React</span>
+                  <span>Flask</span>
+                  <span>Docker</span>
+                  <span>CI/CD</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="experience-item">
+              <div class="experience-header">
+                <div class="experience-info">
+                  <h3>iOS Dev - Solo</h3>
+                  <p class="company">Sleep Stats | App Store</p>
+                  <span class="date">Mar 2024 - Present</span>
+                </div>
+                <div class="experience-metrics">
+                  <div class="metric">
+                    <span class="metric-value">50%</span>
+                    <span class="metric-label">Load Time Improvement</span>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-content">
+                <ul class="experience-details">
+                  <li>
+                    <strong>Health Analytics App:</strong> Developed
+                    comprehensive iOS app using SwiftUI and HealthKit for sleep
+                    and health data analysis
+                  </li>
+                  <li>
+                    <strong>Performance Optimization:</strong> Implemented Core
+                    Data caching for HealthKit data retrieval, reducing load
+                    times by 50%
+                  </li>
+                  <li>
+                    <strong>Monetization:</strong> Integrated StoreKit 2.0 for
+                    subscription functionality with native SwiftUI components
+                  </li>
+                  <li>
+                    <strong>Algorithm Development:</strong> Engineered
+                    algorithms analyzing sleep scores, recovery metrics, and
+                    health vitals using multiple HealthKit data sources
+                  </li>
+                </ul>
+                <div class="tech-used">
+                  <span>SwiftUI</span>
+                  <span>HealthKit</span>
+                  <span>Core Data</span>
+                  <span>StoreKit 2.0</span>
+                  <span>iOS</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2>Key Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/ig-project.jpeg"
+                  alt="Canvas Quiz Assistant"
+                />
+                <div class="project-overlay">
+                  <span class="project-type">Browser Extension</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Stealth</h3>
+                  <div class="project-metrics">
+                    <span class="metric-badge">10K+ Downloads</span>
+                    <span class="metric-badge">Feb 2024 - Present</span>
+                  </div>
+                </div>
+                <p class="project-description">
+                  Developed a browser extension with over 10,000 downloads,
+                  utilizing AI and web scraping.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Scale:</strong> Processed over 21,000+ queries with
+                    a scalable backend on Google Cloud Platform (GCP)
+                  </div>
+                  <div class="detail-item">
+                    <strong>AI Integration:</strong> Integrated Google Vertex AI
+                    and Gemini SDK for generating fine-tuned query answers
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>Google Cloud Platform</span>
+                  <span>AI/ML</span>
+                  <span>Web Scraping</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/projects/3rdplaces.jpg" alt="3rd Places App" />
+                <div class="project-overlay">
+                  <span class="project-type">iOS App</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>3rd Places</h3>
+                  <div class="project-metrics">
+                    <span class="metric-badge">Live on App Store</span>
+                    <span class="metric-badge">Sep 2024 - Jan 2025</span>
+                  </div>
+                </div>
+                <p class="project-description">
+                  iOS app for discovering third places using SwiftUI and UIKit,
+                  working as a Software Engineer - Remote with cross-functional
+                  team collaboration.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Development:</strong> Developed an iOS app using
+                    SwiftUI and UIKit, with a backend powered by PostgreSQL
+                  </div>
+                  <div class="detail-item">
+                    <strong>Implementation:</strong> Implemented core features
+                    and resolved bugs, contributing to the app's functionality
+                    and stability
+                  </div>
+                  <div class="detail-item">
+                    <strong>Collaboration:</strong> Collaborated with
+                    cross-functional teams using Git and GitHub for version
+                    control and project management
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span>SwiftUI</span>
+                  <span>UIKit</span>
+                  <span>PostgreSQL</span>
+                  <span>iOS Development</span>
+                </div>
+                <div class="app-store-section">
+                  <a
+                    href="https://apps.apple.com/us/app/3rd-places/id6608989893"
+                    target="_blank"
+                    class="app-store-btn"
+                  >
+                    <i class="fab fa-apple"></i>
+                    <div class="app-store-text">
+                      <span class="download-text">Download on the</span>
+                      <span class="store-text">App Store</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/sleepstats.jpg"
+                  alt="Sleep Stats App"
+                />
+                <div class="project-overlay">
+                  <span class="project-type">iOS App</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Sleep Stats - Sleep & Recovery</h3>
+                  <div class="project-metrics">
+                    <span class="metric-badge">Live on App Store</span>
+                    <span class="metric-badge">5.0★ Rating</span>
+                  </div>
+                </div>
+                <p class="project-description">
+                  Health analytics iOS app using SwiftUI and HealthKit,
+                  developed as iOS Engineer - Founder. Features comprehensive
+                  sleep and recovery analysis with subscription monetization.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Health Integration:</strong> Developed a health
+                    analytics iOS app using SwiftUI and HealthKit
+                  </div>
+                  <div class="detail-item">
+                    <strong>Performance:</strong> Implemented caching with Core
+                    Data to optimize HealthKit data retrieval, reducing load
+                    times by 50%
+                  </div>
+                  <div class="detail-item">
+                    <strong>Monetization:</strong> Integrated StoreKit 2.0 for
+                    subscription functionality with SwiftUI components
+                  </div>
+                  <div class="detail-item">
+                    <strong>Analytics:</strong> Engineered algorithms to analyze
+                    sleep score, recovery metrics, and health vitals using
+                    multiple HealthKit data objects
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span>SwiftUI</span>
+                  <span>HealthKit</span>
+                  <span>Core Data</span>
+                  <span>StoreKit 2.0</span>
+                </div>
+                <div class="app-store-section">
+                  <a
+                    href="https://apps.apple.com/us/app/sleep-stats-sleep-recovery/id6745151137"
+                    target="_blank"
+                    class="app-store-btn"
+                  >
+                    <i class="fab fa-apple"></i>
+                    <div class="app-store-text">
+                      <span class="download-text">Download on the</span>
+                      <span class="store-text">App Store</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/projects/samantha.jpg"
+                  alt="Voxo Hackathon Project"
+                />
+                <div class="project-overlay">
+                  <span class="project-type">AI Productivity App</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Voxo Hackathon - First Runner Up</h3>
+                  <div class="project-metrics">
+                    <span class="metric-badge">$750 Prize</span>
+                    <span class="metric-badge">Nov 2024</span>
+                  </div>
+                </div>
+                <p class="project-description">
+                  Developed a Gen AI-powered productivity app, winning 3rd place
+                  and a prize of $750. Features intelligent scheduling and task
+                  optimization with real-time chat assistance.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>AI Innovation:</strong> Developed a Gen AI-powered
+                    productivity app, winning 3rd place and a prize of $750
+                  </div>
+                  <div class="detail-item">
+                    <strong>Machine Learning:</strong> Utilized vector
+                    embeddings and AI agents for intelligent scheduling and task
+                    optimization
+                  </div>
+                  <div class="detail-item">
+                    <strong>Integration:</strong> Integrated with Microsoft
+                    Outlook API and implemented a chat assistant for real-time
+                    queries
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span>Gen AI</span>
+                  <span>Vector Embeddings</span>
+                  <span>Microsoft Outlook API</span>
+                  <span>AI Agents</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2>Technical Expertise</h2>
+          <div class="skills-content">
+            <div class="education-section">
+              <h3>Education & Certification</h3>
+              <div class="education-item">
+                <div class="education-header">
+                  <div>
+                    <h4>The University of Southern Mississippi</h4>
+                    <p>Bachelor of Science, Computer Engineering</p>
+                  </div>
+                  <span class="date">Dec 2026</span>
+                </div>
+                <div class="coursework">
+                  <strong>Core Coursework:</strong>
+                  <span>Data Structures</span>
+                  <span>Operating Systems</span>
+                  <span>Computer Systems</span>
+                  <span>Calculus I & II</span>
+                  <span>Differential Equations</span>
+                  <span>Discrete Mathematics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4><i class="fas fa-code"></i> Languages</h4>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-python"></i>
+                      <span class="skill-name">Python</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-js-square"></i>
+                      <span class="skill-name">JavaScript/TypeScript</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-swift"></i>
+                      <span class="skill-name">Swift</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fas fa-code"></i>
+                      <span class="skill-name">C++</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fas fa-database"></i>
+                      <span class="skill-name">SQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4><i class="fas fa-layer-group"></i> Frameworks</h4>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-react"></i>
+                      <span class="skill-name">React</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-swift"></i>
+                      <span class="skill-name">SwiftUI</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-node-js"></i>
+                      <span class="skill-name">Node.js/Express</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-python"></i>
+                      <span class="skill-name">Flask</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-aws"></i>
+                      <span class="skill-name">AWS (Certified)</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fas fa-code-branch"></i>
+                      <span class="skill-name">Terraform</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-docker"></i>
+                      <span class="skill-name">Docker</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-google"></i>
+                      <span class="skill-name">GCP</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Databases</h4>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fas fa-database"></i>
+                      <span class="skill-name">PostgreSQL</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fas fa-leaf"></i>
+                      <span class="skill-name">MongoDB</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <i class="fab fa-aws"></i>
+                      <span class="skill-name">DynamoDB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Let's Build Something</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p class="contact-intro">
+                Open to discussing software engineering opportunities, technical
+                collaborations, or interesting projects. Currently available for
+                internships and part-time roles.
+              </p>
+              <div class="contact-methods">
+                <a
+                  href="mailto:serene.aryal24@gmail.com"
+                  class="contact-method primary"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <span>serene.aryal24@gmail.com</span>
+                  </div>
+                </a>
+                <a
+                  href="https://linkedin.com/in/serenearyal"
+                  target="_blank"
+                  class="contact-method"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <div>
+                    <strong>LinkedIn</strong>
+                    <span>Profile</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
-        <div class="row flex justify-between">
-          <div class="column-1 flex-[0_0_35%]">
-            <img src="images/aboutphoto.jpg" alt="" class="w-[90%] rounded-[20px] ml-12.5 shadow-md transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg" />
-          </div>
-
-          <div class="column-2 flex-[0_0_50%]">
-            <h1 class="text-3xl font-bold mb-5 font-raleway-dots text-shadow-md transition-all duration-300 hover:text-shadow-blue">About me</h1>
-            <p class="text-lg font-thin text-justify">
-              Hey there! I'm Serene from Nepal, currently a Computer Engineering
-              Freshman at USM. I'm just at the beginning of my coding journey
-              but I'm very excited about the projects that I'm going to work on
-              in the near future. When I'm free, I like to do cycling, go hiking
-              or trekking. I like playing and watching sports, and my interests
-              range from watching MMA fights to watching Chess games. Besides
-              these, I do cubing. So if you're interested in Rubik's cubes, hmu
-              :)
-            </p>
-
-            <div class="tab-titles flex mt-7.5 gap-7.5">
-              <p class="tab-links active cursor-pointer font-medium text-xl relative after:content-[''] after:h-0.75 after:w-0 after:bg-primary after:absolute after:left-0 after:bottom-[-6px] after:rounded-sm after:transition-all after:duration-400" onclick="openTab('skills-tab')">
-                Skills
-              </p>
-              <p class="tab-links cursor-pointer font-medium text-xl relative after:content-[''] after:h-0.75 after:w-0 after:bg-primary after:absolute after:left-0 after:bottom-[-6px] after:rounded-sm after:transition-all after:duration-400" onclick="openTab('education-tab')">
-                Education
-              </p>
-              <p class="tab-links cursor-pointer font-medium text-xl relative after:content-[''] after:h-0.75 after:w-0 after:bg-primary after:absolute after:left-0 after:bottom-[-6px] after:rounded-sm after:transition-all after:duration-400" onclick="openTab('experience-tab')">
-                Experience
-              </p>
-            </div>
-
-            <!-- Skills -->
-            <div id="skills-tab" class="tab-content active">
-              <ul class="flex flex-col gap-5">
-                <li class="flex items-center">
-                  <span class="web-development flex-[27%] text-lg font-medium">Web dev:</span>
-                  <div class="images flex-[70%] flex gap-6 justify-start">
-                    <img src="images/logos/js.png" alt="js" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/react.png" alt="react" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/nodejs.png" alt="nodejs" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/mysql.png" alt="mysql" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/python.svg.png" alt="python" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                  </div>
-                </li>
-
-                <li class="flex items-center">
-                  <span class="graphics-design flex-[27%] text-lg font-medium">Graphics Design:</span>
-                  <div class="images flex-[70%] flex gap-6 justify-start">
-                    <img src="images/logos/ps.png" alt="ps" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/ai.png" alt="ai" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/id.png" alt="id" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                  </div>
-                </li>
-
-                <li class="flex items-center">
-                  <span class="version-control flex-[27%] text-lg font-medium">Version Control:</span>
-                  <div class="images flex-[70%] flex gap-6 justify-start">
-                    <img src="images/logos/git.png" alt="git" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                    <img src="images/logos/github.png" alt="github" class="w-12.5 transition-all duration-400 hover:translate-y-[-5px] hover:filter hover:drop-shadow-md" />
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Education -->
-            <div id="education-tab" class="tab-content hidden">
-              <img src="images/education.jpg" alt="" class="education w-[85%] rounded-xl" />
-            </div>
-
-            <div id="experience-tab" class="tab-content hidden text-justify">
-              <span>
-                Although I have several semi-professional experiences, I have
-                not yet had professional working experience. I am currently
-                learning and working on my projects and I am open to multitudes
-                of possibilities.
-              </span>
-            </div>
-          </div>
-        </div>
+        <p>&copy; 2025 Serene Aryal. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
 
-    <!-- Projects -->
-    <div id="projects" class="projects mx-25 my-10 text-dark">
-      <div class="container">
-        <h1 class="text-3xl font-raleway-dots text-shadow-md transition-all duration-300 hover:text-shadow-blue">Projects</h1>
-
-        <div class="works grid grid-cols-auto-fit gap-12.5 mt-12.5">
-          <div class="work relative overflow-hidden rounded-2xl">
-            <img src="images/projects/cryptophile.jpg" alt="" class="w-full h-full transition-all duration-500 object-cover hover:scale-110" />
-            <div class="details-layer w-full h-0 bg-gradient-to-b from-black/50 to-[#72a5f1] text-white overflow-hidden absolute bottom-0 left-0 flex justify-center items-center flex-col text-center transition-all duration-500 group-hover:h-full">
-              <h3>CryptoPhile</h3>
-              <p class="w-4/5 mt-5">
-                CryptoPhile is a cryptocurrency tracker app developed using
-                React. Utilized CoinGecko API to access real-time and historical
-                data of cryptocurrencies.
-              </p>
-              
-                href="https://github.com/serenearyal/Crypto-Phile"
-                target="_blank"
-                class="w-12.5 h-12.5 bg-white rounded-full m-5 flex justify-center items-center transition-all duration-200 hover:bg-[#5395f8]"
-              ><span class="material-symbols-rounded text-[#5395f8] group-hover:text-white">open_in_new</span></a>
-            </div>
-          </div>
-
-          <div class="work relative overflow-hidden rounded-2xl">
-            <img src="images/projects/socialmedia.jpg" alt="" class="w-full h-full transition-all duration-500 object-cover hover:scale-110" />
-            <div class="details-layer w-full h-0 bg-gradient-to-b from-black/50 to-[#72a5f1] text-white overflow-hidden absolute bottom-0 left-0 flex justify-center items-center flex-col text-center transition-all duration-500 group-hover:h-full">
-              <h3>Full Stack Application</h3>
-              <p class="w-4/5 mt-5">
-                A fully functional social media app made using React, Express,
-                NodeJS, and MySQL. Implemented token based JWT Authentication.
-              </p>
-              
-                href="https://github.com/serenearyal/social-media-react"
-                target="_blank"
-                class="w-12.5 h-12.5 bg-white rounded-full m-5 flex justify-center items-center transition-all duration-200 hover:bg-[#5395f8]"
-              ><span class="material-symbols-rounded text-[#5395f8] group-hover:text-white">open_in_new</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="seeall flex items-center justify-center">
-      <a href="https://github.com/serenearyal?tab=repositories" target="_blank"
-        class="bg-primary rounded-md px-4 py-1 text-white cursor-pointer hover:bg-[#545eb8]">View all Projects</a>
-    </div>
-
-    <!-- Contact Me -->
-    <div id="contact" class="contact text-dark">
-      <div class="container mx-25 my-12.5">
-        <div class="row flex flex-col md:flex-row">
-          <div class="contact-left flex-[0_0_45%]">
-            <h1 class="text-3xl font-raleway-dots text-shadow-md transition-all duration-300 hover:text-shadow-blue">Contact me</h1>
-            <p class="email1 text-lg mt-2.5 cursor-pointer" onclick="sendEmail()">
-              <i class="fa-solid fa-paper-plane mr-1"></i>
-              <span class="email1">serenearyal24@gmail.com</span>
-            </p>
-            <div class="social-icons mt-4">
-              <a href="https://www.instagram.com/serenearyal/" target="_blank"
-                class="inline-block text-[rgb(128,106,186)] mr-5 text-3xl transition-transform duration-500 hover:translate-y-[-5px]"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com/serenearyal" target="_blank"
-                class="inline-block text-[rgb(128,106,186)] mr-5 text-3xl transition-transform duration-500 hover:translate-y-[-5px]"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/serenearyal/" target="_blank"
-                class="inline-block text-[rgb(128,106,186)] mr-5 text-3xl transition-transform duration-500 hover:translate-y-[-5px]"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/serenearyal" target="_blank"
-                class="inline-block text-[rgb(128,106,186)] mr-5 text-3xl transition-transform duration-500 hover:translate-y-[-5px]"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-
-          <div class="contact-right flex-[0_0_50%]">
-            <form name="submit-to-google-sheet" class="w-full mt-2.5">
-              <input type="text" name="Name" placeholder="Your Name" required 
-                class="w-full p-1 px-4 my-1 rounded-lg bg-[#cacaca] text-sm" />
-              <input type="email" name="Email" placeholder="Your Email" required
-                class="w-full p-1 px-4 my-1 rounded-lg bg-[#cacaca] text-sm" />
-              <textarea name="Message" rows="6" placeholder="Your message" required
-                class="w-full p-1 px-4 my-1 rounded-lg bg-[#cacaca] text-sm"></textarea>
-              <button class="btn bg-primary rounded-md px-4 py-1 text-white cursor-pointer active:bg-[#545eb8]" type="submit">Submit</button>
-            </form>
-
-            <span id="msg" class="text-green-500 mt-2.5 block"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright w-full text-center mb-2.5">
-        <p>&copy; 2023 All rights reserved. Serene Aryal</p>
-      </div>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
-
